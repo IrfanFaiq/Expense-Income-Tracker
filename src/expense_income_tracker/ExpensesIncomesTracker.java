@@ -66,7 +66,7 @@ public class ExpensesIncomesTracker extends JFrame {
         // Attach an ActionListener to the "Add" button to handle new entry addition.
         addButton = new JButton("Add");
         addButton.addActionListener(e -> addEntry());
-        balanceLabel = new JLabel("Balance: $" + balance);
+        balanceLabel = new JLabel("Balance: RM" + balance);
 
         // Create input panel to arrange input components.
         JPanel inputPanel = new JPanel();
@@ -143,7 +143,7 @@ public class ExpensesIncomesTracker extends JFrame {
 
         // Update the balance and display the new balance.
         balance += amount;
-        balanceLabel.setText("Balance: $"+balance);
+        balanceLabel.setText("Balance: RM"+balance);
 
         // Clear input fields for the next entry.
         clearInputFields();
